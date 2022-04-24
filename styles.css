@@ -1,0 +1,33 @@
+button {
+	font-family:'Courier New';
+	font-size: 15px;
+	font-weight: lighter;
+	height: 30px;
+	margin: 7px;
+}
+
+.verticalGroup{
+	display: flex;
+	justify-content: center;
+	margin-top: 150px;
+}
+
+.verticalGroup > div {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;} 
+
+.verticalGroup > img {
+	display: block;
+	width: 350px;
+}
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
