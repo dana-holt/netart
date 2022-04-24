@@ -1,0 +1,93 @@
+<html>
+
+
+<head>
+	<link rel = "stylesheet" href ="styles.css"> 
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+
+</head>
+
+<title>poptropica</title>
+
+<body style="background-image:url('poptropicapattern.png'); background-size: cover;">
+
+	<h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:50; text-align: center; position: relative; top: 50px">welcome to poptropica!</h1>
+
+	<h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 650px">let's travel to time tangled island...</h1>
+
+	<img src="timetravel.gif" height=400px style="position: relative; top: 650px; left:500px;"></p>
+	<img src = "mission.png" style = "position: relative; height: 400px; top: 235px; left:200px">
+
+	<h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 270px">chat with the scientist about the time machine:</h1>
+
+<div class = "verticalGroup" style = "position: relative; top: 150px">
+	<img id = "convo" src = "convo.png";>
+	<div>
+		<button onclick="changeConvo('convo1.gif');">what is this thing?</button>
+		<button onclick="changeConvo('convo2.gif');">why would i need to visit the future?</button>
+		<button onclick="changeConvo('convo3.gif');">how do i operate the machine?</button>
+	</div>
+</div>
+
+<h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 250px">you find out it's up to you to make the future right...</h1>
+
+<img src="waldo.png" style = "width:20px; position: relative;">
+
+<p style="text-align:center;"><img src = "sign.png" style = "width: 800px; position: relative; top: 250px" ></p>
+
+<a href="https://www.poptropica.com/"><h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 300px;">play poptropica time tangled to discover what happens next!</h1></a>
+
+<script>
+	function changeConvo(path) {
+			var img = document.getElementById("convo");
+			img.src = path;
+			return false;}
+
+
+</script>
+
+<a href="index.html"><img src = "back.gif" style = " width: 150px; position: relative; top: 350px;" ></a>
+
+<style>
+	button {
+	font-family:'Courier New';
+	font-size: 15px;
+	font-weight: lighter;
+	height: 30px;
+	margin: 7px;
+}
+
+.verticalGroup{
+	display: flex;
+	justify-content: center;
+	margin-top: 150px;
+}
+
+.verticalGroup > div {
+	display: flex; 
+	flex-direction: column; 
+	justify-content: center;} 
+
+.verticalGroup > img {
+	display: block;
+	width: 700px;
+}
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+</style>
+
+</body>
+
+
+</html>

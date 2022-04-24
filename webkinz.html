@@ -1,0 +1,118 @@
+<html>
+
+<head>
+	<link rel = "stylesheet" href ="styles.css"> 
+
+</head>
+
+<title>webkinz</title>
+
+<body style="background-image:url('webkinzwallpaper.png'); background-size: cover;">
+
+    <h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:50; text-align: center; position: relative; top: 50px">welcome to webkinz!</h1>
+
+    <h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 100px">take a look at the pets to adopt:</h1>
+
+    <p style="text-align:center;"><img src = "animals.png" style = "width: 800px; position:  relative; top: 100px;"></p>
+
+    <h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 150px">choose a pet to adopt!</h1>
+    <h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 140px">don't forget to give it a name :)</h1>
+
+    <div class = "verticalGroup">
+        <div>
+            <h2 id = "animalName"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative;">pet's name</h2>
+        </div>
+        <div>
+            <button onclick = "renameAnimal();">click here to name</button>
+
+        </div>
+
+    </div>
+
+    <div class = "verticalGroup" style = "position: relative; margin-top: 10px;">
+    <img id = "animal" src = "penguin.png";>
+    <div>
+        <button onclick="changeAnimal('penguin.png');">penguin</button>
+        <button onclick="changeAnimal('wolf.png');">wolf</button>
+        <button onclick="changeAnimal('sunfox.png');">sun fox</button>
+        <button onclick="changeAnimal('bunny.png');">bunny</button>
+        <button onclick="changeAnimal('cat.png');">cat</button>
+        <button onclick="changeAnimal('icefawn.png');">ice fawn</button>
+        <button onclick="changeAnimal('dog.png');">dog</button>
+        <button onclick="changeAnimal('elephant.png');">elephant</button>
+    </div>
+</div>
+
+<h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; top: 10px">congrats! you just adopted a new pet!</h1>
+<p style="text-align:center;"><img src = "dancingdog.gif" style = "width: 500px"></p>
+<img src = "celebrate.gif" style = "width: 200px; position: relative; bottom: 250px; left:250px;">
+<img src = "celebratecopy.gif" style = "width: 200px; position: relative; bottom: 250px; left:760px;">
+
+<h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; bottom: 150px">here are some of the iconic games you can play:</h1>
+<img src = "cashcow.jpg" style = "height: 300px; position: relative; bottom: 150px; left: 200px">
+<img src = "wackyzingoz.png" style = "height: 300px; position: relative; bottom: 150px; left: 230px">
+<p style="text-align:center;"><img src = "polarplunge.webp" style = "width: 500px; position: relative; bottom: 140px;"></p>
+
+<a href="https://www.webkinz.com/"><h1 class = "strokeme"; style="font-family:'Courier New'; font-weight:normal; font-size:25; text-align: center; position: relative; bottom: 130px;">make a webkinz account today!</h1></a>
+
+<a href="index.html"><img src = "back.gif" style = " width: 150px; position: relative; margin-bottom: 1px;" ></a>
+
+<script>
+    function changeAnimal(path) {
+            var img = document.getElementById("animal");
+            img.src = path;
+            return false;}
+
+    function renameAnimal(){
+            let newName = prompt("enter a name for your pet");
+            if (newName!=null) {
+                document.getElementById("animalName").innerHTML = newName;
+            }
+        }
+
+
+</script>
+
+
+<style>
+    button {
+    font-family:'Courier New';
+    font-size: 15px;
+    font-weight: lighter;
+    height: 30px;
+    margin: 7px;
+}
+
+.verticalGroup{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.verticalGroup > div {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;} 
+
+.verticalGroup > img {
+    display: block;
+    width: 700px;
+}
+
+.strokeme
+{
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+</style>
+
+
+</body>
+
+
+</html>
